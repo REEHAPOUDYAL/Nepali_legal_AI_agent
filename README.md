@@ -1,13 +1,13 @@
-Nepali Legal Intelligence System
+# Nepali Legal Intelligence System
 It is a production-grade legal RAG (Retrieval-Augmented Generation) system designed to index and query over 300+ Acts from the Nepal Law Commission. It provides high-precision legal answers with citations down to the specific Khanda (clause) and Dapha (section) levels.
 
-Key Features
+## Key Features
 Hierarchical Parsing: Deep extraction logic that maintains the relationship between Act -> Part -> Chapter -> Section -> Clause.
 Bilingual Support: Handles queries in both Nepali and English, retrieving context from native Nepali legal texts.
 Production-Ready Scraper: Robust Playwright-based engine to automate data collection from the Law Commission portal.
 Hybrid OCR/Digital Extraction: Intelligent detection of scanned vs. digital PDFs for optimal text recovery.
 
-System Architecture
+## System Architecture
 The project is designed with a modular architecture to ensure scalability and maintainability.
 
 1. Data Ingestion Layer
@@ -24,7 +24,7 @@ retriever.py: Multilingual embedding search using paraphrase-multilingual-MiniLM
 generator.py: Core RAG logic using LangChain and Groq (Llama 3.1) to generate cited legal responses.
 rag_controller.py: FastAPI endpoints for seamless integration with frontend interfaces.
 
-Tech Stack
+## Tech Stack
 Language: Python 3.13
 LLM Framework: LangChain / Groq
 Vector Database: ChromaDB
