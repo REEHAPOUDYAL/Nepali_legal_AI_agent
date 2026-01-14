@@ -25,10 +25,10 @@ generator.py: Core RAG logic using LangChain and Groq (Llama 3.1) to generate ci
 rag_controller.py: FastAPI endpoints for seamless integration with frontend interfaces.
 
 ## Tech Stack
-Language: Python 3.13
-LLM Framework: LangChain / Groq
-Vector Database: ChromaDB
-Embeddings: HuggingFace Multilingual MiniLM
-API: FastAPI & Uvicorn
-Data Processing: Playwright (Scraping), Tesseract (OCR), PyMuPDF (Extraction)
+* Language: Python 3.13 
+* LLM Framework: LangChain / Groq
+* Vector Database: ChromaDB
+* Embeddings: HuggingFace Multilingual MiniLM
+* API: FastAPI & Uvicorn
+* Data Processing: Playwright (Scraping), Tesseract (OCR), PyMuPDF (Extraction)
 
