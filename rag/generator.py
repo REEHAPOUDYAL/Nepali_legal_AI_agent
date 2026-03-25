@@ -4,7 +4,10 @@ from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_core.output_parsers import StrOutputParser
 from typing import List, Dict, Optional
+from dotenv import load_dotenv
+load_dotenv()
 
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 class NepalLegalRAG:
     def __init__(self, groq_api_key: str, top_k: int = 5, temperature: float = 0.1):
         self.retriever = Retriever(top_k=top_k)
@@ -140,7 +143,7 @@ Legal Text:
             print("\n Insufficient legal context available in the retrieved documents.")
 
 if __name__ == "__main__":
-    GROQ_API_KEY = "gsk_..." 
+    GROQ_API_KEY = "GROQ_API_KEY" 
     
     rag = NepalLegalRAG(groq_api_key=GROQ_API_KEY)
     test_questions = [
